@@ -41,11 +41,7 @@ module.exports = async (req, res) => {
         const randomNumber = Math.floor(Math.random() * 292) + 1;
 
         // Set CORS headers to allow any origin
-        // res.setHeader('Access-Control-Allow-Origin', '*');
-        // Set CORS headers to allow specific origins
-        res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000, https://devordle-fe.vercel.app',
-            'https://devordle-pquu7w52q-4emar.vercel.app/');
-
+        res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Methods', 'GET');
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
