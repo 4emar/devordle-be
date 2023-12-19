@@ -5,7 +5,10 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+    origin: ['https://devrodle-1bzpbtto9-4emar.vercel.app/', 'http://localhost:3000', 'https://devordle-pquu7w52q-4emar.vercel.app/'],
+    optionsSuccessStatus: 200,
+}));
 
 let randomNumber = generateRandomNumber();
 console.log('Initial random number:', randomNumber);
