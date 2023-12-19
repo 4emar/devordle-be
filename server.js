@@ -38,7 +38,7 @@
 module.exports = async (req, res) => {
     try {
         // Generate a random number between 1 and 100
-        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        const randomNumber = Math.floor(Math.random() * 292) + 1;
 
         // Set CORS headers to allow any origin
         // res.setHeader('Access-Control-Allow-Origin', '*');
