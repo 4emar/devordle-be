@@ -5,7 +5,12 @@ const cors = require('cors'); // Import the cors middleware
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://devordle-fe.vercel.app/',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 
 let randomNumber = generateRandomNumber();
 console.log('Initial random number:', randomNumber);
