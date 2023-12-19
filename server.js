@@ -1,12 +1,12 @@
 const express = require('express');
 const cron = require('node-cron');
-const cors = require('cors'); // Import the cors middleware
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3001;
 
 const corsOptions = {
-    origin: 'https://devordle-fe.vercel.app/',
+    origin: 'https://devordle-fe.vercel.app',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
