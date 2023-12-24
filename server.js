@@ -39,26 +39,3 @@ function generateRandomNumber() {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
-// randomNumber.js
-
-// module.exports = async (req, res) => {
-//     try {
-//         // Generate a random number between 1 and 100
-//         const randomNumber = Math.floor(Math.random() * 292) + 1;
-//
-//         // Set CORS headers to allow any origin
-//         res.setHeader('Access-Control-Allow-Origin', '*');
-//         res.setHeader('Access-Control-Allow-Methods', 'GET');
-//         res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-//
-//         // Set Content-Type header
-//         res.setHeader('Content-Type', 'application/json');
-//
-//         // Send JSON response
-//         res.status(200).json({ randomNumber });
-//     } catch (error) {
-//         // Handle errors and send an appropriate response
-//         console.error('Error generating random number:', error);
-//         res.status(500).json({ error: 'Internal Server Error' });
-//     }
-// };
